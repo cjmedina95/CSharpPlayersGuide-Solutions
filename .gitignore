@@ -1,0 +1,83 @@
+# Ignore Visual Studio temporary files, build results, and project files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore ReSharper files
+_ReSharper*/
+*.resharper
+*.DotSettings.user
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.sln.docstates
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Tye
+.tye/
+
+# Visual Studio Code directories
+.vscode/
+# Rider directories
+.idea/
+
+# User-specific files (MonoAuto Generated Files)
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+
+# Windows auto-generated files
+Desktop.ini
+
+# Windows Files
+$RECYCLE.BIN/
+
+# Ignore the bin and obj directories
+bin/
+obj/
+
+# Ignore the .vs directory
+.vs/
