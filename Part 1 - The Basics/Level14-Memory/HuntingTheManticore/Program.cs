@@ -1,4 +1,10 @@
-﻿int manticoreHealth = 10;
+﻿/**
+* Creator: Christian M.
+* Date: September 17, 2023
+* Description: More complex high-low guessing game
+**/
+
+int manticoreHealth = 10;
 int cityHealth = 15;
 
 Console.Write("Player 1, how far away from the city do you want to station the Manticore? ");
@@ -8,6 +14,7 @@ Console.Clear();
 Console.WriteLine("Player 2, it is your turn.");
 int roundCounter = 1;
 
+// Core game loop
 while (manticoreHealth > 0 && cityHealth > 0)
 {
     printStatus(roundCounter, cityHealth, manticoreHealth);
@@ -16,6 +23,8 @@ while (manticoreHealth > 0 && cityHealth > 0)
 
     Console.Write("The cannon is expected to ");
 
+    // 3 - minor critical hit
+    // 5 - major critical hit
     switch(damageAmount)
     {
         case 3:
@@ -61,12 +70,14 @@ else
     Console.Write("\n");
 }
 
+// Notify the user of the status each round
 void printStatus(int roundCounter, int cityHealth, int manticoreHealth)
 {
     Console.WriteLine("-----------------------------------------------------------");
     Console.WriteLine($"STATUS: Round: {roundCounter}\tCity: {cityHealth}/15\tManticore: {manticoreHealth}/10");
 }
 
+// FizzBuzz implementation to calculate critical hits
 int primeCannon(int roundCounter)
 {
     if (roundCounter % 3 == 0 && roundCounter % 5 == 0) return 5;
@@ -74,6 +85,7 @@ int primeCannon(int roundCounter)
     return 1;
 }
 
+// Determines if any damage was done to the manticore
 int fireCannon(int cannonRange, int manticoreDistance, int damageAmount)
 {
     Console.BackgroundColor = ConsoleColor.DarkGray;
